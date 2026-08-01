@@ -10,6 +10,7 @@ import RoomCreation from './components/RoomComponent/CreateRoomComponent'
 import GameComponent from './components/GameComponent/GameComponent'
 import RegisterPage from './pages/RegisterPage'
 import RoomPage from './pages/RoomPage'
+import HomePage from './pages/HomePage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,13 +18,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/login' element={<Loginpage></Loginpage>}/>
-        <Route path='/register' element={<RegisterPage></RegisterPage>} />
-        <Route path='/room' element={<RoomPage></RoomPage>} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/login' element={<Loginpage />} />
+        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/room' element={<RoomPage />} />
       </Routes>
-      {/* <ChatComponent></ChatComponent>
-      <RoomCreation></RoomCreation> */}
-      {/* <GameComponent></GameComponent> */}
     </>
   )
 }
