@@ -1,4 +1,0 @@
-package com.example.SnakeAndLadder.Services;
-
-public class GamePlayService {
-}
